@@ -14,12 +14,13 @@ public class PlayerController : MonoBehaviour
     private bool grounded;
     private bool jumped;
 
-    public GameObject ground;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,9 +35,17 @@ public class PlayerController : MonoBehaviour
             jumped = false;
             if(Input.GetAxisRaw("Vertical") > 0) {
                 jumped = true;
+                if(Random.Range(0f,1f) > 0.5f) {
+                    animator.SetBool("JumpType", true);
+                }
+                else {
+                    animator.SetBool("JumpType", false);
+                }
+                animator.SetBool("OnGround", false);
             }
-            else if(Input.GetAxisRaw("Vertical") < 0) {
+            else if(Input.GetAxisRaw("Vertical") <= 0) {
                 jumped = false;
+                animator.SetBool("OnGround", true);
             }
             
         }
@@ -82,11 +91,12 @@ public class PlayerController : MonoBehaviour
             {
                 //transform.Translate(colliderDistance.pointA - colliderDistance.pointB);
 
-                // If we intersect an object beneath us, set grounded to true.  && velocity.y < 0
-                if (Vector2.Angle(colliderDistance.normal, Vector2.up) < 90 || Physics2D.IsTouching(boxCollider, ground.GetComponent<Collider2D>()))
+                // If we intersect an object beneath us, set grounded to true.  && velocity.y < 0 || Physics2D.IsTouching(boxCollider, ground.GetComponent<Collider2D>())
+                if (Vector2.Angle(colliderDistance.normal, Vector2.up) < 90 )
                 {
                     grounded = true;
                 }
+                
             }
             
         }

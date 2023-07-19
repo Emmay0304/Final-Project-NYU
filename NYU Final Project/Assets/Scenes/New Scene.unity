@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5220799317951801425, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1176058780}
     - target: {fileID: 5220799317951801432, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -635,6 +639,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.2, y: 2.2256622}
   m_EdgeRadius: 0
+--- !u!95 &1176058780 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2708403063377588402, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
+  m_PrefabInstance: {fileID: 340878074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1233991316
 GameObject:
   m_ObjectHideFlags: 0

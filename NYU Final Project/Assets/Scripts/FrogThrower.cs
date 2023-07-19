@@ -10,10 +10,12 @@ public class FrogThrower : MonoBehaviour
 
     private float nextFireTime = 0;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,9 +34,13 @@ public class FrogThrower : MonoBehaviour
                 {
                     Instantiate(frog, transform.position, frog.transform.rotation).GetComponent<FrogFall>().SetDirection(false);
                 }
+                animator.SetBool("HasFrog", false);
+            }
+            else {
+                animator.SetBool("HasFrog", true);
             }
         }
-        
+
         
     }
 }
