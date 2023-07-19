@@ -8,7 +8,7 @@ public class FrogThrower : MonoBehaviour
 
     public float cooldown = 2f;
 
-    private float nextFireTime = 0;
+    public float nextFireTime = 0;
 
     public Animator animator;
 
@@ -23,22 +23,25 @@ public class FrogThrower : MonoBehaviour
     {
         if(Time.time > nextFireTime)
         {
+            animator.SetBool("HasFrog", true);
             if (Input.GetMouseButtonDown(0))
             {
                 nextFireTime = Time.time + cooldown;
                 if (transform.localScale.x >= 0)
                 {
                     Instantiate(frog, transform.position, frog.transform.rotation).GetComponent<FrogFall>().SetDirection(true);
+                    animator.SetBool("HasFrog", false);
                 }
                 else
                 {
                     Instantiate(frog, transform.position, frog.transform.rotation).GetComponent<FrogFall>().SetDirection(false);
-                }
-                animator.SetBool("HasFrog", false);
+                    animator.SetBool("HasFrog", false);
+                } 
             }
-            else {
-                animator.SetBool("HasFrog", true);
-            }
+            
+        } else
+        {
+            animator.SetBool("HasFrog", false);
         }
 
         
