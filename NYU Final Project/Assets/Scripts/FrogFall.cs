@@ -8,6 +8,7 @@ public class FrogFall : MonoBehaviour
     public bool forwardDirection;
     public float speed = 5f;
     public bool push;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -36,5 +37,6 @@ public class FrogFall : MonoBehaviour
             rb.AddForce(direction * speed, ForceMode2D.Impulse);
             push = false;
         }
+        Destroy(gameObject, 0.5f);
     }
 }
