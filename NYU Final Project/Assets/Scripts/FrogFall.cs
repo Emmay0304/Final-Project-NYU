@@ -6,7 +6,7 @@ public class FrogFall : MonoBehaviour
 {
     public Rigidbody2D rb;
     public bool forwardDirection;
-    public float speed = 5f;
+    public float speed = 3f;
     public bool push;
     
 
