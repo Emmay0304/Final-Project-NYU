@@ -8,40 +8,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5220799317951801425, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5220799317951801425, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 3350060369948804725}
     - target: {fileID: 5220799317951801432, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_Name
-      value: Player Variant
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.89
+      value: -0.39
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.87
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -53,15 +37,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -75,10 +59,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
 --- !u!95 &3350060369948804725 stripped
@@ -86,21 +66,3 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 2708403063377588402, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
   m_PrefabInstance: {fileID: 859026533465650887}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4872861008940801695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5220799317951801432, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
-  m_PrefabInstance: {fileID: 859026533465650887}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1266831643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4872861008940801695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf2c34ff1c7249545bbd3ad23be64709, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  frog: {fileID: 1917251446145863055, guid: bfbc52f24c94a2a4cb02b54b1d2718c0, type: 3}
