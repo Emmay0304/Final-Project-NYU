@@ -31,6 +31,7 @@ public class FrogThrower : MonoBehaviour
             {
                 nextFireTime = Time.time + cooldown;
                 animator.SetBool("HasFrog", false);
+                if(playerLight !=null)
                 playerLight.gameObject.SetActive(false);
                 Vector2 throwPosition = new Vector2(transform.position.x, transform.position.y + throwPositionOffset);
                 if (transform.localScale.x >= 0)
@@ -44,13 +45,15 @@ public class FrogThrower : MonoBehaviour
             }
             else {
                 animator.SetBool("HasFrog", true);
-                playerLight.gameObject.SetActive(true);
+                if (playerLight != null)
+                    playerLight.gameObject.SetActive(true);
             }
             
         } else
         {
             animator.SetBool("HasFrog", false);
-            playerLight.gameObject.SetActive(false);
+            if (playerLight != null)
+                playerLight.gameObject.SetActive(false);
         }
 
         
