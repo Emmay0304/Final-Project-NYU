@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class FrogFall : MonoBehaviour
 {
@@ -23,6 +24,18 @@ public class FrogFall : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision){
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        Vector3 hitPosition = Vector3.zero;
+        if (collision.gameObject.CompareTag("Vines"))
+        {
+            Tilemap tilemap = collision.gameObject.GetComponent<Tilemap>();
+            foreach (ContactPoint2D hit in collision.contacts)
+            {
+                hitPosition.x = hit.point.x - 0.1f;
+                hitPosition.y = hit.point.y - 0.1f;
+                Vector3Int cell = new Vector3Int((int)hitPosition.x, (int)hitPosition.y, 0);
+                tilemap.SetTile(tilemap.WorldToCell(hitPosition), null);
+            }
+        }
     }
 
     // Update is called once per frame
