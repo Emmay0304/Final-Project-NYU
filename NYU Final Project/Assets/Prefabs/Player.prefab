@@ -162,7 +162,7 @@ MonoBehaviour:
   airAcceleration: 30
   groundDeceleration: 70
   jumpHeight: 10
-  ground: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &5220799317951801424
 MonoBehaviour:
   m_ObjectHideFlags: 0
