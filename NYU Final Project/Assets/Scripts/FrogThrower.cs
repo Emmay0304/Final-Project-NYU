@@ -10,7 +10,11 @@ public class FrogThrower : MonoBehaviour
 
     public float nextFireTime = 0;
 
+    public float throwPositionOffset = 1f;
+
     public Animator animator;
+
+    public UnityEngine.Rendering.Universal.Light2D playerLight;
 
     // Start is called before the first frame update
     void Start()
@@ -23,25 +27,30 @@ public class FrogThrower : MonoBehaviour
     {
         if(Time.time > nextFireTime)
         {
-            animator.SetBool("HasFrog", true);
             if (Input.GetMouseButtonDown(0))
             {
                 nextFireTime = Time.time + cooldown;
+                animator.SetBool("HasFrog", false);
+                playerLight.gameObject.SetActive(false);
+                Vector2 throwPosition = new Vector2(transform.position.x, transform.position.y + throwPositionOffset);
                 if (transform.localScale.x >= 0)
                 {
-                    Instantiate(frog, transform.position, frog.transform.rotation).GetComponent<FrogFall>().SetDirection(true);
-                    animator.SetBool("HasFrog", false);
+                    Instantiate(frog, throwPosition, frog.transform.rotation).GetComponent<FrogFall>().SetDirectionCooldown(true, cooldown);                    
                 }
                 else
                 {
-                    Instantiate(frog, transform.position, frog.transform.rotation).GetComponent<FrogFall>().SetDirection(false);
-                    animator.SetBool("HasFrog", false);
+                    Instantiate(frog, throwPosition, frog.transform.rotation).GetComponent<FrogFall>().SetDirectionCooldown(false, cooldown);
                 } 
+            }
+            else {
+                animator.SetBool("HasFrog", true);
+                playerLight.gameObject.SetActive(true);
             }
             
         } else
         {
             animator.SetBool("HasFrog", false);
+            playerLight.gameObject.SetActive(false);
         }
 
         

@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801432, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 5220799317951801436, guid: 973054cce08fd4f01be2e5e05598d71b, type: 3}
       propertyPath: m_RootOrder
@@ -96,6 +96,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frog: {fileID: 1917251446145863055, guid: bfbc52f24c94a2a4cb02b54b1d2718c0, type: 3}
   cooldown: 0.5
+  nextFireTime: 0
+  throwPositionOffset: 1
+  animator: {fileID: 0}
+  playerLight: {fileID: 0}
 --- !u!114 &2845498792267628614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,3 +116,4 @@ MonoBehaviour:
   forwardDirection: 1
   speed: 3
   push: 1
+  cooldown: 0
