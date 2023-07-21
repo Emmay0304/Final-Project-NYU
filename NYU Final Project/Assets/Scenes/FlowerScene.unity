@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968325, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: boostingForce
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968328, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: m_Sprite
@@ -884,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968325, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: boostingForce
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968329, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: m_RootOrder
@@ -961,7 +961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968325, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: boostingForce
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968329, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: m_RootOrder
@@ -1110,7 +1110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968325, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: boostingForce
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968329, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: m_RootOrder
