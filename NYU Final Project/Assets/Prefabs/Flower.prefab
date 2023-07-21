@@ -150,3 +150,6 @@ MonoBehaviour:
   shoot: 0
   waitTime: 1
   boostingForce: 5
+  boostingTime: 0.05
+  pendingEffect: {fileID: 3142665934232058522, guid: 8b8ac958d8215774bb9b98933c301978, type: 3}
+  burstEffect: {fileID: 6113984748188264219, guid: b56ba643197531b41811ba9f77589b0e, type: 3}

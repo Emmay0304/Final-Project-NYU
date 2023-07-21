@@ -9,6 +9,8 @@ public class FlowerActivated : MonoBehaviour
     public float waitTime = 1f;
     public float boostingForce = 10f;
     public float boostingTime = 0.05f;
+    public ParticleSystem pendingEffect;
+    public ParticleSystem burstEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +32,12 @@ public class FlowerActivated : MonoBehaviour
     }
 
     private IEnumerator Activate() {
+        Instantiate(pendingEffect, transform.position, pendingEffect.transform.rotation);
         GetComponent<SpriteRenderer>().color = Color.yellow;
         yield return new WaitForSeconds(waitTime);
         litUp = false;
         shoot = true;
+        Instantiate(burstEffect, transform.position, burstEffect.transform.rotation);
         yield return new WaitForSeconds(boostingTime);
         shoot = false;
         GetComponent<SpriteRenderer>().color = Color.white;
