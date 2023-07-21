@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4872861008940801687, guid: 0718e60a5c924f749b8e2c38c75e4e8b, type: 3}
+      propertyPath: m_JumpForce
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 4872861008940801691, guid: 0718e60a5c924f749b8e2c38c75e4e8b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1808,6 +1812,10 @@ PrefabInstance:
     - target: {fileID: 8867273678579968324, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: m_Name
       value: Flower
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867273678579968325, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
+      propertyPath: boostingForce
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8867273678579968329, guid: 8d56053748f6f8e47986d24305d3ab10, type: 3}
       propertyPath: m_RootOrder
