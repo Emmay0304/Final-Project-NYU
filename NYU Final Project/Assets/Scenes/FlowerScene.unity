@@ -261,6 +261,14 @@ PrefabInstance:
       propertyPath: ground
       value: 
       objectReference: {fileID: 1544893995}
+    - target: {fileID: 4872861008940801686, guid: 0718e60a5c924f749b8e2c38c75e4e8b, type: 3}
+      propertyPath: jumpHeight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872861008940801687, guid: 0718e60a5c924f749b8e2c38c75e4e8b, type: 3}
+      propertyPath: m_JumpForce
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4872861008940801691, guid: 0718e60a5c924f749b8e2c38c75e4e8b, type: 3}
       propertyPath: m_RootOrder
       value: 1
