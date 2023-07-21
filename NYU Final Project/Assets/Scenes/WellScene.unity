@@ -252,9 +252,11 @@ GameObject:
   - component: {fileID: 185992901}
   - component: {fileID: 185992903}
   - component: {fileID: 185992902}
+  - component: {fileID: 185992905}
+  - component: {fileID: 185992904}
   m_Layer: 0
   m_Name: TilemapVines
-  m_TagString: Untagged
+  m_TagString: Vines
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1307,6 +1309,43 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &185992904
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185992900}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!19719996 &185992905
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185992900}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
 --- !u!1 &300004939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1500,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695080584}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d91c53e16d5ee4d64895b0b4f322ead5, type: 3}
@@ -2044,8 +2083,14 @@ MonoBehaviour:
   cooldown: 2
   nextFireTime: 0
   throwPositionOffset: 1
-  animator: {fileID: 0}
+  animator: {fileID: 1249892449}
   playerLight: {fileID: 0}
+  frogEffect: {fileID: 2754466321393681944, guid: 06d391107130759408cacd8d08bcd021, type: 3}
+--- !u!95 &1249892449 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3350060369948804725, guid: 0718e60a5c924f749b8e2c38c75e4e8b, type: 3}
+  m_PrefabInstance: {fileID: 185695467}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1474365877
 GameObject:
   m_ObjectHideFlags: 0
