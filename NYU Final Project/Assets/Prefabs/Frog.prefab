@@ -143,3 +143,4 @@ MonoBehaviour:
   throwForwardsDistance: 0.25
   push: 0
   cooldown: 0
+  frogEffect: {fileID: 2754466321393681944, guid: 06d391107130759408cacd8d08bcd021, type: 3}

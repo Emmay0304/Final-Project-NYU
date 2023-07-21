@@ -12,6 +12,7 @@ public class FrogFall : MonoBehaviour
     public float throwForwardsDistance = 0.5f;
     public bool push;
     public float cooldown;
+    public ParticleSystem frogEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,7 @@ public class FrogFall : MonoBehaviour
 
     private IEnumerator RetrieveFrog() {
         yield return new WaitForSeconds(cooldown);
+        Instantiate(frogEffect, transform.position, frogEffect.transform.rotation);
         Destroy(gameObject);
     }
 

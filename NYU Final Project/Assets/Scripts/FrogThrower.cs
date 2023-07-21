@@ -16,6 +16,8 @@ public class FrogThrower : MonoBehaviour
 
     public UnityEngine.Rendering.Universal.Light2D playerLight;
 
+    public ParticleSystem frogEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +33,11 @@ public class FrogThrower : MonoBehaviour
             {
                 nextFireTime = Time.time + cooldown;
                 animator.SetBool("HasFrog", false);
-                if(playerLight !=null)
-                playerLight.gameObject.SetActive(false);
+                
                 Vector2 throwPosition = new Vector2(transform.position.x, transform.position.y + throwPositionOffset);
+                Instantiate(frogEffect, gameObject.transform);
+                if(playerLight !=null)
+                    playerLight.gameObject.SetActive(false);
                 if (transform.localScale.x >= 0)
                 {
                     Instantiate(frog, throwPosition, frog.transform.rotation).GetComponent<FrogFall>().SetDirectionCooldown(true, cooldown);                    

@@ -1314,7 +1314,7 @@ GameObject:
   - component: {fileID: 300004941}
   - component: {fileID: 300004940}
   m_Layer: 0
-  m_Name: Well_complete ver
+  m_Name: WellSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1380,7 +1380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300004939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.97, y: -2.6, z: 1}
+  m_LocalPosition: {x: 4.87, y: -2.93, z: 1}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1640,7 +1640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723135382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.54, y: -0.6700001, z: -10}
+  m_LocalPosition: {x: -4.5600014, y: -1.3199999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1791,8 +1791,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724294028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 0.42, z: 11}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalPosition: {x: -0.13, y: 0.0596, z: 11}
+  m_LocalScale: {x: 3.2759957, y: 3.2759957, z: 3.2759957}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1706318911}
@@ -4441,7 +4441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706318909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.54, y: -0.6700001, z: -10}
+  m_LocalPosition: {x: -4.5600014, y: -1.3199999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4497,7 +4497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 6, y: 2.5, z: -10}
+  m_FollowOffset: {x: 2.9799986, y: 1.8500001, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
