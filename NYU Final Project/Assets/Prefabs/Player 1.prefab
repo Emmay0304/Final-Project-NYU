@@ -100,6 +100,7 @@ MonoBehaviour:
   throwPositionOffset: 1
   animator: {fileID: 0}
   playerLight: {fileID: 0}
+  frogEffect: {fileID: 2754466321393681944, guid: 06d391107130759408cacd8d08bcd021, type: 3}
 --- !u!114 &2845498792267628614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703595779573354683}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e93eb119a878184aaad0f250b896482, type: 3}
   m_Name: 
@@ -115,5 +116,8 @@ MonoBehaviour:
   rb: {fileID: 0}
   forwardDirection: 1
   speed: 3
+  throwUpwardsAngle: 0.5
+  throwForwardsDistance: 0.5
   push: 1
   cooldown: 0
+  frogEffect: {fileID: 2754466321393681944, guid: 06d391107130759408cacd8d08bcd021, type: 3}
