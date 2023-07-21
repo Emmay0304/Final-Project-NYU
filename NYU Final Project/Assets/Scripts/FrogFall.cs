@@ -31,7 +31,6 @@ public class FrogFall : MonoBehaviour
         Vector3 hitPosition = Vector3.zero;
         if (collision.gameObject.CompareTag("Vines"))
         {
-            print("VINE");
             Tilemap tilemap = collision.gameObject.GetComponent<Tilemap>();
             foreach (ContactPoint2D hit in collision.contacts)
             {

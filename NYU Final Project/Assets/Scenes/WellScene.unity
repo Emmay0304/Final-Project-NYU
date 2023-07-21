@@ -1356,9 +1356,11 @@ GameObject:
   m_Component:
   - component: {fileID: 300004941}
   - component: {fileID: 300004940}
+  - component: {fileID: 300004942}
+  - component: {fileID: 300004943}
   m_Layer: 0
   m_Name: WellSprite
-  m_TagString: Untagged
+  m_TagString: Main
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1430,6 +1432,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300004942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300004939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093e02df4f444324090f5fa494fe795a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 0}
+  ifNone: {fileID: 0}
+  ifTop: {fileID: 21300000, guid: 5d9a4efc5181f5241941f7233717dfd2, type: 3}
+  ifBottom: {fileID: 21300000, guid: 7bd03807ba8f23140a989652197fa296, type: 3}
+  ifBoth: {fileID: 21300000, guid: d51f6d68a04824b68bf71d28c3053953, type: 3}
+--- !u!61 &300004943
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300004939}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.051739216, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.63, y: 5.93}
+    newSize: {x: 5.63, y: 5.93}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.5265217, y: 5.93}
+  m_EdgeRadius: 0
 --- !u!1 &328121548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,7 +2028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932672921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.32, y: 2.47, z: 0.32008383}
+  m_LocalPosition: {x: 26.75, y: 2.47, z: 0.32008383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2055,7 +2100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976389161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.32, y: -3.56, z: 0.32008383}
+  m_LocalPosition: {x: 26.75, y: -3.56, z: 0.32008383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
